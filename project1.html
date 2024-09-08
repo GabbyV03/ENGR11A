@@ -12,6 +12,7 @@
         }
         .section {
             margin-bottom: 50px;
+            margin-top: 20px;
         }
         .section img {
             width: 45%;
@@ -46,8 +47,8 @@
     <div class="container">
         <!-- Header -->
         <header class="mb-5">
-            <h1 class="text-center">My Project Reflection</h1>
-            <p class="text-center">A reflection on the various parts of my project.</p>
+            <h1 class="text-center">My Project 1 Reflection</h1>
+            <p class="text-center">A reflection on the various parts of my project 1.</p>
         </header>
 
         <!-- Section 1 -->
@@ -55,10 +56,13 @@
             <h2>Part 1: Nametag</h2>
             <img src="assets/NametagTopView.jpg" alt="Nametag top-view">
             <p>
-                The first stage of my project involved thorough planning. I spent a significant amount of time outlining 
-                the scope, setting milestones, and establishing a timeline. This part of the project was crucial as it set 
-                the foundation for everything that followed. I learned the importance of detailed planning and how it can 
-                prevent potential pitfalls down the road.
+                The first stage of my project involved downloading a 3mf file of a nametag in order to slice in the Prusa 
+                Slicer software. At this part I learned how to change the quality and configuration of the print settings as 
+                well as editing a design if need be. Once I downloaded the files from Box, I opened the 3mf file (stl files have 
+                to be imported as I will get into later...) and changed the template to my name, which would've breaked the 
+                print since my name went over the sides and keychain hole. The settings were set at 0.2mm quality speed and 20% infill. 
+                We also learned how to change, load, and unload the PLA filament in order to change colors for the detail part of 
+                the design or if the printer ran out of PLA. The print was successful as seen in the picture above.
             </p>
         </div>
 
@@ -67,64 +71,57 @@
             <h2>Part 2: Second Print: Stress Print-Yoshi</h2>
             <img src="assets/Yoshi 3D Print File.png" alt="Yoshi STL File">
             <p>
-                During the design phase, I focused on creating wireframes and prototypes for the project. This step allowed 
-                me to visualize the final product and make necessary adjustments before moving into development. It was 
-                an iterative process where I received feedback and refined the designs. This phase taught me the value of 
-                flexibility and iteration in the creative process.
+                For the second part of the project, we were tasked with printing a stress test. I chose to print a Low-Poly Yoshi, hoping 
+                that the large nose lacking support would be a good overhang test for the printer. I downloaded the stl file from Thingiverse 
+                and imported it into Prusa Slicer. It was at this part that I learned more about the differnces between 3mf and stl files. 
+                3mf files are the files that contain more detailed information regarding the print, such as color, textures, materials, and other 
+                metadata. On the otherhand, stl files are the files that contain the 3D model geometry, but not the detailed information that 3mf 
+                files have. I changed the settings to 0.2mm quality, 20% infill. The print was mostly successful, but there were some issues that I 
+                would consider stress points.
             </p>
         </div>
 
         <!-- Section 3 -->
         <div class="section">
-            <h2>Feet Layer Spacing</h2>
-            <img src="assets/YoshiTopFeet.jpg" alt="Development Phase">
+            <h2>Adherence Issues</h2>
+            <img src="assets/YoshiBottomPic.jpg" alt="Yoshi Base Pic">
             <p>
-                The development phase was the most intensive part of the project. I worked on coding the project, building 
-                the core functionalities, and integrating the design elements. This part of the project reinforced my coding 
-                skills and also highlighted the importance of debugging and testing. It was challenging but also very rewarding 
-                to see the project come to life.
+                During the first few minutes of printing, I focused on adherance issues. I learned that the first layer is the most important 
+                layer of the print and often where 80-90% of issues occur (this is especially true when I would 3D print in High School), 
+                as it is the layer that adheres to the print bed. If the first layer is not adhering properly, the print will fail. I learned 
+                how to adjust the bed level, clean the bed, and use glue stick to help with adherence. It started off well, but the print had some 
+                geometrical design flaws that caused the filament to not adhere properly at some points. It fixed itself after a few layers and it could start 
+                building up the walls and infill, but in the future I would want to fix the design flaws before printing as well as checking the bed level 
+                and cleaning the bed before printing.
             </p>
         </div>
 
         <!-- Section 4 -->
         <div class="section">
-            <h2>Adherence Issues</h2>
-            <img src="assets/YoshiBottomPic.jpg" alt="Testing and Launch">
-            <p>
-                In the final phase, I conducted extensive testing to ensure everything worked as expected. This included 
-                unit testing, integration testing, and user testing. After making the necessary adjustments based on feedback, 
-                I successfully launched the project. This phase was a great learning experience in ensuring quality and 
-                understanding the importance of user feedback.
-            </p>
-        </div>
-
-        <!-- Section 5 -->
-        <div class="section">
             <h2>Overhang</h2>
-            <img src="assets/YoshiUnderChin.jpg" alt="Testing and Launch">
+            <img src="assets/YoshiUnderChin.jpg" alt="Yoshi Under Nose Pic">
             <p>
-                In the final phase, I conducted extensive testing to ensure everything worked as expected. This included 
-                unit testing, integration testing, and user testing. After making the necessary adjustments based on feedback, 
-                I successfully launched the project. This phase was a great learning experience in ensuring quality and 
-                understanding the importance of user feedback.
+                This was the most critical part of the print. The overhang of the nose was a critical point in the print as I thought it would start stringing down 
+                and possibly ruin the print. I learned that overhangs are areas of the print that are not fully supported by the layer below it or by some sort of support that
+                can be taken off after the print is done. It started off going the way I expected-with some hanging layers, but as the print went on, the layers became more stable and eventually the "failure" that can be 
+                seen in the photo is all that really "messed up" the print.
             </p>
         </div>
 
-         <!-- Section 6 -->
+         <!-- Section 5 -->
          <div class="section">
             <h2>Final product</h2>
             <img src="assets/YoshiRegularPic.jpg" alt="Yoshi Final Print">
             <p>
-                In the final phase, I conducted extensive testing to ensure everything worked as expected. This included 
-                unit testing, integration testing, and user testing. After making the necessary adjustments based on feedback, 
-                I successfully launched the project. This phase was a great learning experience in ensuring quality and 
-                understanding the importance of user feedback.
+                Overall, I would say that the print was mostly successful, but there were some issues that I would consider stress points, such as the overhang under the nose and the adherence issues. I think this speaks to
+                the limitations of the 3D printer and the design of the print. The printer relies on the design to have a good base fill in and support structure in order to print properly. I think that in the future, I would want 
+                to fix the design flaws. The overhang can be prevented with a support structure, and only then would I consider the print to be a total success.
             </p>
         </div>
 
         <!-- Footer -->
         <footer class="text-center">
-            <p>© 2024 My Project Blog</p>
+            <p>© 2024 My Project 1 Blog</p>
         </footer>
     </div>
 
